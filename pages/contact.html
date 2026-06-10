@@ -10,6 +10,11 @@
 
 <header class="header">
     <img src="../assets/logo/school-logo.svg" class="school-logo" alt="Kaagusue Faith Christian Academy logo">
+
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+    </div>
+
     <nav>
         <a href="../index.html">Home</a>
         <a href="academics.html">Academics</a>
@@ -30,29 +35,45 @@
 </section>
 
 <section class="contact-section section grid grid-2">
+
     <div class="card">
-        <h3>Get in Touch</h3>
-        <p>For inquiries about admissions, programs, or general information, please reach out using the form.</p>
+        <h3>Send Us a Message</h3>
+
         <form class="form">
             <label>Your Name</label>
             <input type="text" required>
+
             <label>Email</label>
             <input type="email" required>
+
             <label>Phone</label>
             <input type="tel">
+
             <label>Message</label>
             <textarea required></textarea>
+
             <button type="submit" class="btn-primary">Send Message</button>
         </form>
     </div>
 
     <div class="card-soft">
         <h3>School Information</h3>
-        <p><strong>Address:</strong><br>Kaagusue Faith Christian Academy<br>[City], [Country]</p>
-        <p><strong>Phone:</strong> [School Phone Number]</p>
-        <p><strong>Email:</strong> info@kaagusuefaithacademy.org</p>
-        <p><strong>Office Hours:</strong><br>Monday – Friday, 8:00 AM – 4:00 PM</p>
+
+        <p><strong>Address:</strong><br>
+        Kaagusue Faith Christian Academy<br>
+        [City], [Country]</p>
+
+        <p><strong>Phone:</strong><br>
+        [School Phone Number]</p>
+
+        <p><strong>Email:</strong><br>
+        info@kaagusuefaithacademy.org</p>
+
+        <p><strong>Office Hours:</strong><br>
+        Monday – Friday<br>
+        8:00 AM – 4:00 PM</p>
     </div>
+
 </section>
 
 <footer>
@@ -60,5 +81,14 @@
 </footer>
 
 <script src="../js/lightbox.js"></script>
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const nav = document.querySelector('nav');
+    mobileMenu.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>

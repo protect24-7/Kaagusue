@@ -10,6 +10,11 @@
 
 <header class="header">
     <img src="assets/logo/school-logo.svg" class="school-logo" alt="Kaagusue Faith Christian Academy logo">
+
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+    </div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="pages/academics.html">Academics</a>
@@ -72,5 +77,14 @@
 </footer>
 
 <script src="js/lightbox.js"></script>
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const nav = document.querySelector('nav');
+    mobileMenu.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>

@@ -10,6 +10,11 @@
 
 <header class="header">
     <img src="../assets/logo/school-logo.svg" class="school-logo" alt="Kaagusue Faith Christian Academy logo">
+
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+    </div>
+
     <nav>
         <a href="../index.html">Home</a>
         <a href="academics.html">Academics</a>
@@ -30,18 +35,22 @@
 </section>
 
 <section class="staff-grid grid grid-3">
+
     <div class="card center">
         <h3>Principal</h3>
-        <p>School leadership focused on faith, excellence, and student success.</p>
+        <p>Providing leadership rooted in Christian values and academic excellence.</p>
     </div>
+
     <div class="card center">
         <h3>Academic Coordinators</h3>
-        <p>Overseeing curriculum, instruction, and student support across all levels.</p>
+        <p>Overseeing curriculum, instruction, and student support across all grade levels.</p>
     </div>
+
     <div class="card center">
         <h3>Teaching Staff</h3>
-        <p>Qualified Christian educators committed to holistic development.</p>
+        <p>Qualified Christian educators committed to holistic student development.</p>
     </div>
+
 </section>
 
 <footer>
@@ -49,5 +58,14 @@
 </footer>
 
 <script src="../js/lightbox.js"></script>
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const nav = document.querySelector('nav');
+    mobileMenu.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>

@@ -88,23 +88,35 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
-/* Header */
+/* Header (Transparent Overlay + Mobile Menu Support) */
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-sm) var(--space-lg);
-    background: var(--sky);
-    box-shadow: var(--shadow-soft);
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+    height: 120px;
 }
 
 .school-logo {
-    height: 110px;
+    height: 100%;
     width: auto;
 }
 
+/* Desktop Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 nav a {
-    margin-left: var(--space-md);
     text-decoration: none;
     color: var(--white);
     font-weight: 600;
@@ -127,13 +139,41 @@ nav a:hover::after {
     width: 100%;
 }
 
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.menu-toggle span {
+    width: 28px;
+    height: 3px;
+    background: var(--white);
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+/* Hamburger Animation */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
 /* Hero */
 .hero {
     position: relative;
-    padding: 140px var(--space-lg);
+    padding: 160px var(--space-lg) 140px;
     text-align: center;
     color: var(--white);
-    background: linear-gradient(to bottom, var(--sky), var(--white));
 }
 
 .hero-building {
@@ -277,7 +317,7 @@ nav a:hover::after {
     color: var(--gray);
 }
 
-/* Gallery Grid (FIXED) */
+/* Gallery Grid */
 .gallery-grid {
     padding: var(--space-xl) var(--space-lg);
 }
@@ -381,17 +421,31 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
+
+    .menu-toggle {
+        display: flex;
     }
 
-    nav a {
-        margin: 0 var(--space-xs);
+    nav {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.85);
+        backdrop-filter: blur(6px);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    nav.active {
+        display: flex;
     }
 
     .hero {
-        padding: 120px var(--space-md);
+        padding: 140px var(--space-md);
     }
 
     .section,

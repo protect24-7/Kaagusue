@@ -1,0 +1,71 @@
+<svg width="500" height="500" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg">
+  <title>Kaagusue Faith Christian Academy Logo</title>
+  <desc>Logo for Kaagusue Faith Christian Academy with transparent background.</desc>
+
+  <defs>
+    <path id="nameArc" d="M 210,240 A 130,130 0 0,1 470,240"/>
+    <path id="motoArc" d="M 228,265 A 116,116 0 0,0 452,265"/>
+  </defs>
+
+  <!-- Sunburst rays -->
+  <g opacity="0.13">
+    <line x1="340" y1="240" x2="340" y2="68"  stroke="#EF9F27" stroke-width="2"/>
+    <line x1="340" y1="240" x2="340" y2="412" stroke="#EF9F27" stroke-width="2"/>
+    <line x1="340" y1="240" x2="168" y2="240" stroke="#EF9F27" stroke-width="2"/>
+    <line x1="340" y1="240" x2="512" y2="240" stroke="#EF9F27" stroke-width="2"/>
+    <line x1="340" y1="240" x2="218" y2="118" stroke="#EF9F27" stroke-width="2"/>
+    <line x1="340" y1="240" x2="462" y2="362" stroke="#EF9F27" stroke-width="2"/>
+    <line x1="340" y1="240" x2="462" y2="118" stroke="#EF9F27" stroke-width="2"/>
+    <line x1="340" y1="240" x2="218" y2="362" stroke="#EF9F27" stroke-width="2"/>
+  </g>
+
+  <!-- Outer gold ring -->
+  <circle cx="340" cy="240" r="168" fill="none" stroke="#EF9F27" stroke-width="3"/>
+  <circle cx="340" cy="240" r="160" fill="none" stroke="#FAC775" stroke-width="1"/>
+
+  <!-- Side stars -->
+  <text x="178" y="245" font-size="11" fill="#EF9F27" text-anchor="middle" font-family="Georgia, serif">✦</text>
+  <text x="502" y="245" font-size="11" fill="#EF9F27" text-anchor="middle" font-family="Georgia, serif">✦</text>
+
+  <!-- Navy inner fill -->
+  <circle cx="340" cy="240" r="156" fill="#042C53"/>
+  <circle cx="340" cy="240" r="148" fill="none" stroke="#185FA5" stroke-width="1"/>
+
+  <!-- School name curved inside ring along top -->
+  <text font-family="Georgia, serif" font-size="12" fill="#EF9F27" font-weight="bold" letter-spacing="2">
+    <textPath href="#nameArc" startOffset="50%" text-anchor="middle">KAAGUSUE FAITH CHRISTIAN ACADEMY</textPath>
+  </text>
+
+  <!-- Motto curved inside ring along bottom -->
+  <text font-family="Georgia, serif" font-size="11" fill="#FAC775" font-style="italic" letter-spacing="1.5">
+    <textPath href="#motoArc" startOffset="50%" text-anchor="middle">✦ FAITH · KNOWLEDGE · EXCELLENCE ✦</textPath>
+  </text>
+
+  <!-- Cross -->
+  <rect x="320" y="198" width="40" height="9" rx="2" fill="#EF9F27"/>
+  <rect x="336" y="186" width="9" height="50" rx="2" fill="#EF9F27"/>
+
+  <!-- Dove body -->
+  <ellipse cx="358" cy="201" rx="11" ry="7" fill="#B5D4F4" transform="rotate(-15,358,201)"/>
+  <path d="M348,198 Q340,190 347,186 Q353,196 358,199 Z" fill="#E6F1FB"/>
+  <circle cx="366" cy="195" r="5" fill="#E6F1FB"/>
+  <polygon points="370,194 376,192 370,197" fill="#EF9F27"/>
+  <circle cx="367" cy="194" r="1.2" fill="#042C53"/>
+  <path d="M370,199 Q376,202 374,207" fill="none" stroke="#639922" stroke-width="1.5"/>
+  <ellipse cx="374" cy="206" rx="3" ry="2" fill="#639922" transform="rotate(-20,374,206)"/>
+
+  <!-- Open book -->
+  <path d="M294,233 Q294,223 304,221 L340,226 L340,256 L304,251 Q294,249 294,233 Z" fill="#FAC775" stroke="#EF9F27" stroke-width="1"/>
+  <path d="M386,233 Q386,223 376,221 L340,226 L340,256 L376,251 Q386,249 386,233 Z" fill="#FAC775" stroke="#EF9F27" stroke-width="1"/>
+  <rect x="338" y="224" width="4" height="33" rx="1" fill="#EF9F27"/>
+  <line x1="307" y1="231" x2="334" y2="230" stroke="#854F0B" stroke-width="0.8"/>
+  <line x1="307" y1="237" x2="334" y2="236" stroke="#854F0B" stroke-width="0.8"/>
+  <line x1="307" y1="243" x2="334" y2="242" stroke="#854F0B" stroke-width="0.8"/>
+  <line x1="346" y1="230" x2="373" y2="231" stroke="#854F0B" stroke-width="0.8"/>
+  <line x1="346" y1="236" x2="373" y2="237" stroke="#854F0B" stroke-width="0.8"/>
+  <line x1="346" y1="242" x2="373" y2="243" stroke="#854F0B" stroke-width="0.8"/>
+
+  <!-- KFCA monogram -->
+  <text x="340" y="284" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#EF9F27" letter-spacing="6">KFCA</text>
+
+</svg>

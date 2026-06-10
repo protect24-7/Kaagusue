@@ -9,7 +9,12 @@
 <body>
 
 <header class="header">
-    <img src="../assets/logo/school-logo.svg" class="school-logo" alt="Kaagusue Faith Christian Academy logo">
+    <img src="../assets/logo/school-logo.svg" class="school-logo">
+
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+    </div>
+
     <nav>
         <a href="../index.html">Home</a>
         <a href="academics.html">Academics</a>
@@ -30,41 +35,19 @@
 </section>
 
 <section class="academic-grid grid grid-3">
-    <div class="card">
-        <h3>Early Childhood</h3>
-        <p>Foundational learning through guided discovery, play, and Christ-centered care.</p>
-    </div>
-    <div class="card">
-        <h3>Primary School</h3>
-        <p>Core literacy, numeracy, and character development grounded in biblical values.</p>
-    </div>
-    <div class="card">
-        <h3>Junior High</h3>
-        <p>Critical thinking, leadership, and preparation for national and international exams.</p>
-    </div>
-    <div class="card">
-        <h3>Senior High</h3>
-        <p>Advanced academic pathways and spiritual formation for university and careers.</p>
-    </div>
+    <div class="card"><h3>Early Childhood</h3><p>Foundational learning through guided discovery.</p></div>
+    <div class="card"><h3>Primary School</h3><p>Core literacy, numeracy, and character development.</p></div>
+    <div class="card"><h3>Junior High</h3><p>Critical thinking and exam preparation.</p></div>
+    <div class="card"><h3>Senior High</h3><p>Advanced pathways for university and careers.</p></div>
 </section>
 
 <section class="section grid grid-2">
     <div class="card">
         <h3>Science & Laboratory Learning</h3>
-        <p>Hands-on science education that encourages curiosity, discipline, and respect for God’s creation.</p>
+        <p>Hands-on science education encouraging curiosity and discipline.</p>
     </div>
     <div class="gallery-item">
-        <img src="../assets/images/science-lab.jpg" alt="Students in science lab">
-    </div>
-</section>
-
-<section class="section grid grid-2">
-    <div class="gallery-item">
-        <img src="../assets/images/graduation-indoor.jpg" alt="Graduation ceremony">
-    </div>
-    <div class="card">
-        <h3>Graduation & Achievement</h3>
-        <p>We celebrate milestones with dignity and joy, recognizing God’s faithfulness in every achievement.</p>
+        <img src="../assets/images/science-lab.jpg">
     </div>
 </section>
 
@@ -73,5 +56,14 @@
 </footer>
 
 <script src="../js/lightbox.js"></script>
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const nav = document.querySelector('nav');
+    mobileMenu.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>
